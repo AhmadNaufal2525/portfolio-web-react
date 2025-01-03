@@ -5,7 +5,7 @@ import ContactRoute from "./pages/contact";
 import NotFound from "./pages/notFound";
 import Navbar from "./components/navbar";
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
   useLocation,
