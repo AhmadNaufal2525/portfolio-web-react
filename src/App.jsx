@@ -37,7 +37,7 @@ function App() {
 
 function Root() {
   return (
-    <Router basename="/portfolio-web-react/">
+    <Router>
       <App />
     </Router>
   );
