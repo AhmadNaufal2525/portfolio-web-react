@@ -1,3 +1,4 @@
+import React from "react";
 import HomeRoute from "./routes/homeRoute";
 import AboutRoute from "./routes/aboutMeRoute";
 import PortfolioRoute from "./routes/portfolioRoute";
