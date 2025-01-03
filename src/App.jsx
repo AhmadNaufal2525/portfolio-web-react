@@ -1,8 +1,8 @@
-import HomeRoute from "../src/pages/home";
-import AboutRoute from "./pages/about";
-import PortfolioRoute from "./pages/portfolio";
-import ContactRoute from "./pages/contact";
-import NotFound from "./pages/notFound";
+import HomeRoute from "./routes/homeRoute";
+import AboutRoute from "./routes/aboutMeRoute";
+import PortfolioRoute from "./routes/portfolioRoute";
+import ContactRoute from "./routes/contactRoute";
+import NotFound from "./routes/notfoundRoute";
 import Navbar from "./components/navbar";
 import {
   BrowserRouter as Router,
