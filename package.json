@@ -3,11 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "commonjs",
+  "homepage": "https://github.com/AhmadNaufal2525/portfolio-web-react",
   "scripts": {
-    "dev": "vite",
+    "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "vite build",
+    "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"
   },
