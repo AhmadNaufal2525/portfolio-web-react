@@ -107,8 +107,8 @@ const About = () => {
     {
       image: SertifDBT,
       title: "Sustainable Nurturing Program",
-      publisher: "Edspert.Id",
-      skill: "Flutter Mobile Development",
+      publisher: "Telkom DBT",
+      skill: "Software Quality Assurance",
       time: "Mar - Aug 2023",
       link: "https://drive.google.com/file/d/1IfEt2wol5uLy7ss4TL8iYj1G2fb_Z0Dj/view",
     },

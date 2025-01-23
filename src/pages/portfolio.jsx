@@ -29,7 +29,7 @@ const Portfolio = () => {
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       ],
       type: "website",
-      link: "https://github.com/AhmadNaufal2525/kuliner-go-web.git",
+      github: "https://github.com/AhmadNaufal2525/kuliner-go-web.git",
     },
     {
       image: PortoWeb,
@@ -40,7 +40,8 @@ const Portfolio = () => {
         "https://vite.dev/logo.svg",
       ],
       type: "website",
-      link: "https://personalwebsite.com",
+      github: "https://personalwebsite.com",
+      link: "https://portfolio-web-react-umber.vercel.app/",
     },
     {
       image: KulinerMob,
@@ -52,7 +53,7 @@ const Portfolio = () => {
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
       ],
       type: "mobile",
-      link: "https://github.com/AhmadNaufal2525/kuliner.go-mobile.git",
+      github: "https://github.com/AhmadNaufal2525/kuliner.go-mobile.git",
     },
     {
       image: AntriaMob,
@@ -63,12 +64,12 @@ const Portfolio = () => {
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
       ],
       type: "mobile",
-      link: "https://github.com/Antria-id/antria-mitra-mobile.git",
+      github: "https://github.com/Antria-id/antria-mitra-mobile.git",
     },
     {
       image: AdmaMob,
       title: "ADMA Mobile",
-      description: "Inventory management for Sucofindo.",
+      description: "Inventory management",
       tools: [
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
@@ -76,7 +77,7 @@ const Portfolio = () => {
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       ],
       type: "mobile",
-      link: "https://github.com/AhmadNaufal2525/ADMA-APP.git",
+      github: "https://github.com/AhmadNaufal2525/ADMA-APP.git",
     },
     {
       image: BitreadMob,
@@ -88,19 +89,19 @@ const Portfolio = () => {
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
       ],
       type: "mobile",
-      link: "https://github.com/AhmadNaufal2525/bitread-app.git",
+      github: "https://github.com/AhmadNaufal2525/bitread-app.git",
     },
     {
       image: EdspertMob,
-      title: "Bitread Mobile",
-      description: "E-book platform for readers.",
+      title: "Edspert Mobile",
+      description: "Edspert Course Quiz",
       tools: [
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
       ],
       type: "mobile",
-      link: "https://github.com/AhmadNaufal2525/final-project-edspert.id.git",
+      github: "https://github.com/AhmadNaufal2525/final-project-edspert.id.git",
     },
   ];
 
@@ -119,6 +120,8 @@ const Portfolio = () => {
                 desc={item.description}
                 tools={item.tools}
                 link={item.link}
+                github={item.github}
+                type={item.type}
               />
             ))}
         </div>
@@ -138,6 +141,8 @@ const Portfolio = () => {
                 desc={item.description}
                 tools={item.tools}
                 link={item.link}
+                github={item.github}
+                type={item.type}
               />
             ))}
         </div>

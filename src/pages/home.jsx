@@ -37,6 +37,8 @@ const Home = () => {
                 1000,
                 "Flutter Developer",
                 1000,
+                "Frontend Web Developer",
+                1000,
               ]}
               wrapper="span"
               speed={50}

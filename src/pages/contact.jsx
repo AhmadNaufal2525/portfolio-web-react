@@ -1,8 +1,52 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false); // To manage loading state
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!name || !email || !message) {
+      alert("All fields are required!");
+      return;
+    }
+
+    setLoading(true);
+
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "Ahmad Naufal Diwantara Putra",
+      message: message,
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        setLoading(false);
+        alert("Message Sent Successfully");
+        console.log(response);
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((error) => {
+        setLoading(false);
+        alert("Error sending message:", error);
+        console.error(error);
+      });
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -26,6 +70,7 @@ const Contact = () => {
           Feel free to reach out via the form below
         </p>
         <form
+          onSubmit={handleSubmit}
           data-aos="fade-up"
           className="w-full max-w-lg bg-[#0B131D] p-8 rounded-lg shadow-md border border-[#5067FF]"
         >
@@ -42,6 +87,8 @@ const Contact = () => {
               name="name"
               className="w-full p-3 rounded-lg bg-[#222831] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#5067FF]"
               placeholder="Your Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className="mb-4">
@@ -57,6 +104,8 @@ const Contact = () => {
               name="email"
               className="w-full p-3 rounded-lg bg-[#222831] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#5067FF]"
               placeholder="Your Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="mb-6">
@@ -72,13 +121,15 @@ const Contact = () => {
               rows="4"
               className="w-full p-3 rounded-lg bg-[#222831] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#5067FF]"
               placeholder="Your Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
           <button
             type="submit"
             className="w-full py-3 rounded-lg bg-[#5067FF] text-white font-semibold hover:bg-[#2f4bff] focus:outline-none focus:ring-2 focus:ring-[#5067FF]"
           >
-            Send Message
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>
