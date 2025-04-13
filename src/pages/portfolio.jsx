@@ -4,7 +4,6 @@ import Tabs from "../components/tabs";
 import CardPorto from "../components/portofolioCard";
 import KulinerWeb from "../assets/portofolio/kuliner-web.png";
 import PortoWeb from "../assets/portofolio/porto-web.png";
-import EdspertMob from "../assets/portofolio/edspert-mob.png";
 import KulinerMob from "../assets/portofolio/kuliner-mob.png";
 import AdmaMob from "../assets/portofolio/adma-mob.png";
 import BitreadMob from "../assets/portofolio/bitread-mob.png";
@@ -91,25 +90,13 @@ const Portfolio = () => {
       type: "mobile",
       github: "https://github.com/AhmadNaufal2525/bitread-app.git",
     },
-    {
-      image: EdspertMob,
-      title: "Edspert Mobile",
-      description: "Edspert Course Quiz",
-      tools: [
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-      ],
-      type: "mobile",
-      github: "https://github.com/AhmadNaufal2525/final-project-edspert.id.git",
-    },
   ];
 
   const tabsPortfolio = [
     {
       title: "Web Development",
       content: (
-        <div className="w-full md:grid md:grid-cols-2 grid grid-row md:justify-center justify-center items-center md:items-start md:gap-8 gap-2 gap-y-14 mt-8 md:mb-0 mb-[6rem]">
+        <div className="w-full justify-center items-center md:grid md:grid-cols-2 grid grid-row md:justify-center md:items-start md:gap-8 gap-2 gap-y-14 mt-8 md:mb-0 mb-[6rem]">
           {portfolioData
             .filter((item) => item.type === "website")
             .map((item, index) => (
@@ -130,7 +117,7 @@ const Portfolio = () => {
     {
       title: "Mobile Development",
       content: (
-        <div className="w-full md:grid md:grid-cols-2 grid grid-row md:justify-center justify-center items-center md:items-start md:gap-8 gap-2 gap-y-14 mt-8 md:mb-0 mb-[6rem]">
+        <div className="w-full justify-center items-center md:grid md:grid-cols-2 grid grid-row md:justify-center md:items-start md:gap-8 gap-2 gap-y-14 mt-8 md:mb-0 mb-[6rem]">
           {portfolioData
             .filter((item) => item.type === "mobile")
             .map((item, index) => (

@@ -1,6 +1,5 @@
 import React from "react";
-import { FaGlobe, FaGithub } from "react-icons/fa";
-import { TfiAndroid } from "react-icons/tfi";
+import { FaGithub } from "react-icons/fa";
 
 const CardPorto = ({ image, title, tools, desc, github, type, link }) => {
   const renderIcon = () => {
@@ -11,9 +10,7 @@ const CardPorto = ({ image, title, tools, desc, github, type, link }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1 cursor-pointer"
-        >
-          <FaGlobe className="text-[#5067FF] w-7 h-7" />
-        </a>
+        ></a>
       );
     }
     if (type === "mobile") {
@@ -23,9 +20,7 @@ const CardPorto = ({ image, title, tools, desc, github, type, link }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1 cursor-pointer"
-        >
-          <TfiAndroid className="text-[#5067FF] w-7 h-7" />
-        </a>
+        ></a>
       );
     }
     return null;
