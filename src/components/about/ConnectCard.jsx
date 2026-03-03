@@ -3,7 +3,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const links = [
   {
-    href: "mailto:ahmadnaufal2525@gmail.com",
+    href: "mailto:ahmadnaufal588@gmail.com",
     icon: <HiOutlineMail size={16} />,
   },
   {
