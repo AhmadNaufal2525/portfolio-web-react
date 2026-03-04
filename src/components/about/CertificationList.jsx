@@ -10,7 +10,7 @@ const CertificationList = () => (
   <div data-aos="fade-left" data-aos-delay="120">
     <div className="flex items-center gap-3 mb-5">
       <span className="text-xl">🏆</span>
-      <h2 className="text-white font-bold text-xl">Certifications</h2>
+      <h2 className="text-white font-bold text-xl">Certifications & Bootcamp</h2>
     </div>
     <div className="flex flex-col gap-4">
       {certificationData.map((c, i) => (

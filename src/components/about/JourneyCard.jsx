@@ -20,9 +20,7 @@ const JourneyCard = () => (
         abilities building robust, user-friendly applications using Flutter
         while simultaneously developing a strong foundation in software quality
         assurance. Starting with internships at Telkom DBT and Bitread Digital
-        Publishing, I bridged the gap between testing and development. This
-        hybrid background lets me speak both languages — engineering correctness
-        and user experience — fluently.
+        Publishing, I bridged the gap between testing and development.
       </p>
     </div>
   </section>

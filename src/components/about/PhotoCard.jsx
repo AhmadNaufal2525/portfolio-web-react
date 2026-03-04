@@ -11,7 +11,7 @@ const PhotoCard = () => (
     <img
       src={SelfPhoto}
       alt="Ahmad Naufal"
-      className="w-full h-[280px] object-cover object-top"
+      className="w-full h-[500px] object-cover object-top sm:h-[600px] lg:h-[400px]"
     />
     <div className="p-4">
       <div className="flex items-center gap-2 text-gray-400 text-sm">

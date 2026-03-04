@@ -32,7 +32,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="min-h-screen w-full px-6 sm:px-12 lg:px-16 py-16 relative overflow-hidden">
+    <section className="min-h-screen w-full px-6 mb-5 sm:px-12 lg:px-16 py-16 relative overflow-hidden">
       {/* Ambient glows */}
       <div
         className="absolute top-0 left-0 w-[500px] h-[500px] pointer-events-none"

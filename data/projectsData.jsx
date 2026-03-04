@@ -64,7 +64,7 @@ export const projects = [
     tags: ["React", "Tailwind CSS", "Web App"],
     category: "Web Development",
     image: Portfolio,
-    link: "https://github.com/AhmadNaufal2525/portfolio-web-react.git",
+    link: "https://ahmadnaufaldp.vercel.app/",
   },
 ];
 

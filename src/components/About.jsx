@@ -46,9 +46,7 @@ const About = () => {
     <section className="min-h-screen w-full px-5 sm:px-10 lg:px-20 pt-20 pb-24 relative overflow-hidden bg-[#0d1117]">
       <div data-aos="fade-up" className="mb-12">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight max-w-2xl">
-          Designing systems,
-          <br />
-          <span className="text-[#5067FF]">crafting experiences.</span>
+          About <span className="text-[#5067FF]">Me</span>
         </h1>
 
         <p className="text-gray-400 mt-4 text-base max-w-lg leading-relaxed">
@@ -65,7 +63,7 @@ const About = () => {
             className="px-4 py-2 rounded-full bg-[#161b22] text-white border border-gray-700 focus:outline-none focus:border-[#5067FF] transition"
           >
             <option value="mobile">Flutter Developer CV</option>
-            <option value="qa">QA Engineer CV</option>
+            <option value="qa">Software Quality Asssurance CV</option>
             <option value="se">Software Engineer CV</option>
             <option value="general">General CV</option>
           </select>
