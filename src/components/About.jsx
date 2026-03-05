@@ -71,7 +71,7 @@ const About = () => {
           {/* Download Button */}
           <a
             href={cvOptions[selectedCV].file}
-            download={`${cvOptions[selectedCV].label} - Ahmad Naufal Diwantara Putra.pdf`}
+            download="CV - Ahmad Naufal Diwantara Putra.pdf"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 group
             bg-[rgba(80,103,255,0.15)] border border-[rgba(80,103,255,0.35)]
             hover:bg-[#5067FF] hover:border-[#5067FF] hover:shadow-[0_0_24px_rgba(80,103,255,0.5)] text-white"

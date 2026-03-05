@@ -12,7 +12,7 @@ export const projects = [
     tags: ["Flutter", "Dart", "Mobile App", "Firebase"],
     category: "Mobile Apps",
     image: KulinerGo,
-    link: "https://github.com/AhmadNaufal2525/kuliner-go-mobile.git",
+    link: "https://github.com/Xiraj/kuliner.go-mobile.git",
   },
   {
     id: 2,
