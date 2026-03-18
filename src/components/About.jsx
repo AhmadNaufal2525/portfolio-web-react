@@ -12,6 +12,28 @@ import CertificationList from "./about/CertificationList";
 import CV from "../assets/cv/CV.pdf";
 
 const About = () => {
+  const handleDownload = async (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+
+    try {
+      const response = await fetch(CV);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "CV - Ahmad Naufal Diwantara Putra.pdf");
+
+      document.body.appendChild(link);
+      link.click();
+
+      link.parentNode.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Download failed", error);
+    }
+  };
+
   useEffect(() => {
     AOS.init({ duration: 700, once: true });
     AOS.refresh();
@@ -29,9 +51,8 @@ const About = () => {
           about mobile development and software quality assurance.
         </p>
         <div className="mt-3 flex gap-3">
-          <a
-            href={CV}
-            download="CV - Ahmad Naufal Diwantara Putra.pdf"
+          <button
+            onClick={handleDownload}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 bg-[#5067FF] hover:bg-[#3d4fb3] hover:shadow-[0_0_24px_rgba(80,103,255,0.6)] text-white"
           >
             <svg
@@ -48,7 +69,7 @@ const About = () => {
               />
             </svg>
             Download CV
-          </a>
+          </button>
         </div>
       </div>
 
