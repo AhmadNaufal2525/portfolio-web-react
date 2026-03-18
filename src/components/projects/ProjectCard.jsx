@@ -1,7 +1,7 @@
 import React from "react";
 import { tagColors } from "../../../data/projectsData";
 
-const ProjectCard = ({ project, index }) => (
+const ProjectCard = ({ project, index, onOpenModal }) => (
   <div
     data-aos="fade-up"
     data-aos-delay={index * 80}
@@ -38,7 +38,7 @@ const ProjectCard = ({ project, index }) => (
         style={{ background: "rgba(80,103,255,0.12)" }}
       />
       <button
-        onClick={() => window.open(project.link, "_blank")}
+        onClick={onOpenModal}
         className="absolute top-3 right-3 w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300"
         style={{
           background: "rgba(255,255,255,0.12)",

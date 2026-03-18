@@ -6,7 +6,6 @@ import PhotoCard from "./about/PhotoCard";
 import TechStackCard from "./about/TechStackCard";
 import ConnectCard from "./about/ConnectCard";
 import JourneyCard from "./about/JourneyCard";
-import CoreValuesGrid from "./about/CoreValuesGrid";
 import ExperienceTimeline from "./about/ExperienceTimeline";
 import CertificationList from "./about/CertificationList";
 
@@ -63,7 +62,6 @@ const About = () => {
 
         <div className="flex flex-col gap-8">
           <JourneyCard />
-          <CoreValuesGrid />
           <ExperienceTimeline />
           <CertificationList />
         </div>

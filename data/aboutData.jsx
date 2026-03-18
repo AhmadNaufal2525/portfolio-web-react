@@ -33,33 +33,6 @@ export const skillData = [
   },
 ];
 
-export const coreValues = [
-  {
-    icon: "📱",
-    color: "#5067FF",
-    title: "Mobile First",
-    desc: "I craft experiences that feel native on every screen, prioritising touch-friendly interactions and fluid performance.",
-  },
-  {
-    icon: "⚡",
-    color: "#a855f7",
-    title: "Performance",
-    desc: "Fast is a feature. I obsess over bundle sizes, efficient rendering patterns, and smooth 60 fps animations.",
-  },
-  {
-    icon: "🔍",
-    color: "#22c55e",
-    title: "Quality Assurance",
-    desc: "I apply rigorous test plans, test cases, and automation to ensure software reliability from day one.",
-  },
-  {
-    icon: "🤝",
-    color: "#f59e0b",
-    title: "Clear Communication",
-    desc: "I keep stakeholders informed and maintain transparent feedback loops throughout every project.",
-  },
-];
-
 export const experienceData = [
   {
     period: "Aug 2025 — Oct 2025",
