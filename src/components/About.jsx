@@ -12,26 +12,20 @@ import CertificationList from "./about/CertificationList";
 import CV from "../assets/cv/CV.pdf";
 
 const About = () => {
-  const handleDownload = async (e) => {
-    e.preventDefault(); // Prevent default anchor behavior
+  const handleDownload = async () => {
+    const response = await fetch(CV);
+    const blob = await response.blob();
 
-    try {
-      const response = await fetch(CV);
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement("a");
 
-      const link = document.createElement("a");
-      link.href = url;
-      link.setAttribute("download", "CV - Ahmad Naufal Diwantara Putra.pdf");
+    link.href = url;
+    link.download = "CV - Ahmad Naufal Diwantara Putra.pdf";
+    document.body.appendChild(link);
+    link.click();
 
-      document.body.appendChild(link);
-      link.click();
-
-      link.parentNode.removeChild(link);
-      window.URL.revokeObjectURL(url);
-    } catch (error) {
-      console.error("Download failed", error);
-    }
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
   };
 
   useEffect(() => {
